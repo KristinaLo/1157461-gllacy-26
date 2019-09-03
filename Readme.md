@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Кристина Локтионова](https://up.htmlacademy.ru/htmlcss/26/user/1157461).
-* Наставник: [Артем Макаров](https://htmlacademy.ru/profile/deepsick).
+* Наставник: [Артем Макаров](https://up.htmlacademy.ru/htmlcss/26/user/429879).
 
 ---
 
