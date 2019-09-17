@@ -10,22 +10,40 @@
   <header>
 
     <nav>
-      <a><img src="img/Logo_Gllacy.svg" width="154px" height="64px" alt="Логотип магазина Глейси "></a>
+      <a><img src="img/Logo-Gllacy.svg" width="154px" height="64px" alt="Логотип магазина Глейси "></a>
       <ul>
         <li><a href="catalog.html"> Каталог </a></li>
         <li><a href="#">Доставки и оплата</a></li>
         <li><a href="#">О компании</a></li>
       </ul>
       <ul>
-        <li> Поиск</li>
-        <li> Вход</li>
-        <li> Пусто </li>
+        <li>
+          <form action="https://echo/htmlacademy.ru" method="POST">
+            <label for="search"> Поиск
+              <input type="search" name="search" id="search" placeholder="Что ищем?">
+            </label></li>
+
+        <li> <label> Вход
+          <br>
+          <input type="text" name="email" value="Электронная почта" placeholder="Электронная почта">
+          <br>
+          <input type="password" name="password" value="Пароль" placeholder="Пароль">
+        </label>
+          <br>
+          <a href="#">Забыли пароль?</a>
+          <br>
+          <a href="#">Новая регистрация</a>
+          <br>
+          <button type="submit">Войти</button>
+        </li>
+        <li> Пусто </form>
+        </li>
       </ul>
     </nav>
   </header>
   <main>
     <h1>Магазин развесного мороженого Глейси</h1>
-
+    <p>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
     <section>
       <h2>Преимущества</h2>
       <ul>
@@ -55,7 +73,8 @@
       <h2>Подпишитесь на рассылку</h2>
       <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
         Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-      <button type="button">Отправить</button>
+      <input type="email" placeholder="Электронная почта">
+      <button type="submit">Отправить</button>
     </section>
   </main>
   <footer>
