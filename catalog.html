@@ -10,39 +10,55 @@
   <header>
 
     <nav>
-      <a><img src="img/Logo-Gllacy.svg" width= "154" height= "64" alt="Логотип магазина Глейси "></a>
+      <a><img src="img/logo-gllacy.svg" width="154" height="64" alt="Логотип магазина Глейси "></a>
       <ul>
-        <li><a href="#">Каталог </a><form action="index.html">
-          <select name="catalog" id="catalog">
-            <option value="Новинки">Новинки</option>
-            <option value="Сливочное">Сливочное</option>
-            <option value="Щербеты">Щербеты</option>
-            <option value="Фруктовый лед">Фруктовый лед</option>
-            <option value="Мелорин">Мелорин</option>
-          </select>
- </form> </li>
+        <li><a href="#">Каталог </a>
+         <ul>
+              <li>Новинки</li>
+              <li>Сливочное</li>
+              <li>Щербеты</li>
+              <li> Фруктовый лед</li>
+              <li>Мелорин</li>
+            </ul>
+        </li>
 
         <li><a href="#">Доставки и оплата</a></li>
         <li><a href="#">О компании</a></li>
       </ul>
 
       <ul>
-        <li> Поиск</li>
-        <li> Вход</li>
-        <li>2 товара</li>
-        <ul>
-            <li>
-                <img src="img/index/creamy-with-orange-jam-and-citrus-shavings.jpg" width="50" height="50" alt="Сливочное мороженое с апельсиновым джемом 
+        <form action="https://echo/htmlacademy.ru" method="POST">
+          <label for="search"> Поиск
+            <input type="search" name="search" id="search" placeholder="Что ищем?">
+          </label>
+          </li>
+
+          <li> <label for="email"> Вход </label>
+
+            <input type="email" name="email" placeholder="Электронная почта" id="email">
+
+            <label for="password">Пароль</label>
+            <input type="password" name="password" placeholder="Пароль" id="password">
+            <ul>
+              <li> <a href="#">Забыли пароль?</a></li>
+
+              <li> <a href="#">Новая регистрация</a></li>
+            </ul>
+            <button type="submit">Войти</button>
+
+          <li>2 товара</li>
+
+          <img src="img/index/creamy-with-orange-jam-and-citrus-shavings.jpg" width="50" height="50" alt="Сливочное мороженое с апельсиновым джемом 
                 и цитрусовой стружкой">
-                <p>Пломбир с апельсиновым джемом и цитрусовой стружкой 1,5кг х 200 руб. 300 руб.</p>
-              </li>
-              <li>
-                  <img src="img/index/creamy-coffee-with-pieces-of-chocolate.jpg" width="50" height="50"
-                    alt="Сливочно-кофейное мороженое с кусочками шоколада"><p>Сливочно-кофейное с кусочками шоколада 1.5 кг х 300 руб. 450 руб.</p>
-                </li>
-                <li>Итого: 750 руб.</li>
-                <button type="submit">Оформить заказ</button>
-        </ul>
+          <p>Пломбир с апельсиновым джемом и цитрусовой стружкой 1,5кг х 200 руб. 300 руб.</p>
+
+          <img src="img/index/creamy-coffee-with-pieces-of-chocolate.jpg" width="50" height="50"
+            alt="Сливочно-кофейное мороженое с кусочками шоколада">
+          <p>Сливочно-кофейное с кусочками шоколада 1.5 кг х 300 руб. 450 руб.</p>
+
+          <p>Итого: 750 руб</p>
+          <button type="submit">Оформить заказ</button>
+
       </ul>
     </nav>
   </header>
