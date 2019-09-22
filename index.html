@@ -10,14 +10,14 @@
 </head>
 
 <body>
-  <header>
+  <header class="header-item">
 
-    <nav>
+    <nav >
       <a><img src="img/logo-gllacy.svg" width="154" height="64" alt="Логотип магазина Глейси "></a>
-      <ul>
-        <li><a href="catalog.html"> Каталог </a></li>
-        <li><a href="#">Доставки и оплата</a></li>
-        <li><a href="#">О компании</a></li>
+      <ul class="menu">
+        <li class="menu-item"><a class="menu-link" href="catalog.html"> Каталог </a></li>
+        <li class="menu-item"><a class="menu-link" href="#">Доставки и оплата</a></li>
+        <li class="menu-item"><a class="menu-link" href="#">О компании</a></li>
       </ul>
       <ul>
         <li>
@@ -25,94 +25,111 @@
             <label for="search"> Поиск
               <input type="search" name="search" id="search" placeholder="Что ищем?">
             </label>
+          </form>
         </li>
+        <li><button type="button">вход</button></li>
+        <li>
+          <form action="https://echo/htmlacademy.ru" method="POST">
+            <label for="email"class="visually-hidden">Email</label>
 
-        <li> <label for="email"> Вход </label>
+            <input type="email" name="email" placeholder="Электронная почта" id="email">
 
-          <input type="email" name="email" placeholder="Электронная почта" id="email">
-
-          <label for="password" class="visually-hidden">Пароль</label>
-          <input type="password" name="password" placeholder="Пароль" id="password">
-
+            <label for="password" class="visually-hidden">Пароль</label>
+            <input type="password" name="password" placeholder="Пароль" id="password">
+          </form>
           <ul>
-            <li> <a href="#">Забыли пароль?</a></li>
+            <li> <a class="form-link" href="#">Забыли пароль?</a></li>
 
-            <li> <a href="#">Новая регистрация</a></li>
+            <li> <a class="form-link" href="#">Новая регистрация</a></li>
           </ul>
           <button type="submit">Войти</button>
 
         </li>
-        </form>
+
         <li> Пусто </li>
 
       </ul>
     </nav>
   </header>
   <main>
-    <h1>Магазин развесного мороженого Глейси</h1>
-    <section>
+    <h1 class="visually-hidden">Магазин развесного мороженого Глейси</h1>
+    <br>
+   
+
+
+    <section class="advantages" >
+
+      <h2 class="visually-hidden">Преимущества</h2>
       <p>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес.</p>
 
-      <h2>Преимущества</h2>
-      <ul>
+      <ul class="advantages-list">
 
-        <li>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и
+        <li class="technologies" >Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и
           проверенных временем технологий.</li>
 
-        <li>
+          <li class="materials" >
           Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные
           ингредиенты и добавки произведены из натурального, экологически чистого сырья.
         </li>
 
-        <li>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас
+        <li class="cooperation" >Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас
           связывает долговременное сотрудничество</li>
 
-        <li>
+          <li class="delivery " >
           Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому
           растаять в пути и позволяет сохранить превосходный вкус.
         </li>
       </ul>
+
     </section>
-    <article>
+    <article class="sherbet">
       <h2>Новое в нашем блоге</h2>
       <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
     </article>
-    <section>
-      <h2>Подпишитесь на рассылку</h2>
+    <section class="mailing">
+      <h2 class="visually-hidden" >Подпишитесь на рассылку</h2>
       <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
         Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
       <input type="email" placeholder="Электронная почта">
       <button type="submit">Отправить</button>
     </section>
   </main>
-  <footer>
-    <ul>
-      <li><a href="#">Твиттер</a></li>
-      <li><a href="#">Инстаграм</a></li>
-      <li><a href="#">Фейсбук</a></li>
-      <li><a href="#">Вконтакте</a></li>
+
+
+  <footer class="footer-menu">
+    <ul >
+      <li><a class="footer-link-tw"  href="#">Твиттер</a></li>
+      <li><a class="footer-link-in" href="#">Инстаграм</a></li>
+      <li><a class="footer-link-fb" href="#">Фейсбук</a></li>
+      <li><a class="footer-link-vk" href="#">Вконтакте</a></li>
     </ul>
-    <ul>
-      <li><a href="#">Для поставщиков</a></li>
-      <li><a href="#">О производстве</a></li>
-      <li><a href="#">Наши документы</a></li>
-      <li><a href="#">Экологические стандарты</a></li>
+
+    <ul class="footer-production" >
+      <li><a class="suppliers" href="#">Для поставщиков</a></li>
+      <li><a class="production" href="#">О производстве</a></li>
+      <li><a class=" documents" href="#">Наши документы</a></li>
+      <li><a class="standards" href="#">Экологические стандарты</a></li>
     </ul>
+    
     <a href="https://htmlacademy.ru/intensive/htmlcss"> HTML Academy</a>
     <p>Сделано в <a href='https://htmlacademy.ru/intensive/htmlcss'>HTML Academy</a> © 2019 </p>
   </footer>
-  <form action="https://echo/htmlacademy.ru" method="POST">
+
+  <section style="popup">
     <button type="button">Закрыть</button>
-    <label for="name-question">Имя для отзыва</label>
-    <input type="text" name="name" placeholder="Как вас зовут?" id="name-question">
-    <label for="email-questuion">Почта для отзыва</label>
-    <input type="email" name="email" placeholder="Ваша почта для ответа?" id="email-questuion">
-    <label for="question">Текст для отзыва</label>
-    <textarea name="question" cols="30" rows="10" placeholder="Напишите что-нибудь..." id="question"></textarea>
+    <h2>Мы обязательно вам ответим!</h2>
+    <form action="https://echo/htmlacademy.ru" method="POST">
 
-    <button type="submit">Отправить</button>
-  </form>
+      <label for="name-question" class="visually-hidden">Имя для отзыва</label>
+      <input type="text" name="name" placeholder="Как вас зовут?" id="name-question">
+      <label for="email-questuion" class="visually-hidden">Почта для отзыва</label>
+      <input type="email" name="email" placeholder="Ваша почта для ответа?" id="email-questuion">
+      <label for="question" class="visually-hidden">Текст для отзыва</label>
+      <textarea name="question" cols="30" rows="10" placeholder="Напишите что-нибудь..." id="question"></textarea>
 
+      <button type="submit">Отправить</button>
+    </form>
+  </section>
 </body>
 
 </html>

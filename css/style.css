@@ -1,7 +1,210 @@
-body{
- margin: ;
- padding: ;
- font-family: 'Roboto', sans-serif;
- font-size: ;
- color:  ;
+body  {
+ margin:0;
+ padding:0;
+ font-family: 'Roboto', Arial,  sans-serif;
+ font-size: 16px;
+ color:#323232 ;
+ font-weidth: 400;
+ background-color:#849d8f;
+ text-decoration: none;
+}
+
+
+img  {
+max-width: 100%;
+height: auto;
+}
+
+.visually-hidden {
+    color:red;
+}
+
+
+
+.header-item {
+    padding: 0px;
+    margin: 0px;
+    font-size: 16px;
+font-weight: 700;
+color: #ffffff}
+
+
+.menu-link {
+text-decoration:none;
+color: #ffffff;
+
+}
+
+.form-link {
+color: #323232;
+}
+
+
+
+
+.advantages  {
+    padding: 0px;
+    margin: 0px;
+    font-color: #323232;
+    font-size: 24px;
+    font-weight: 400;
+    
+}
+
+.advantages li {
+    padding: 0px;
+    margin: 0px;
+    font-size: 16px;
+
+}
+
+
+.sherbet h2 {
+    padding: 0px;
+    margin: 0px;
+    color: #323232;
+    font-size: 16px;
+    font-weight: 700;
+  
+}
+.sherbet a{
+    padding: 0px;
+    margin: 0px;  
+    height: 14px;
+    color: #323232;
+    font-size: 24px;
+    font-weight: 500;
+
+}
+
+
+
+
+.mailing p{
+    padding: 0px;
+    margin: 0px;  
+color: #5a5a5a;
+font-size: 16px;
+font-weight: 400;
+
+}
+
+.footer-menu a {
+    text-decoration: none;   
+padding: 0px;
+margin: 0px; 
+color:#ffffff; 
+}
+
+
+.footer-link-tw  {}
+
+.footer-link-in  {}
+
+.footer-link-fb  {}
+
+.footer-link-vk  {}
+
+
+.suppliers { 
+   
+padding: 0px;
+margin: 0px; 
+font-size:13px;
+font-weight: 700;
+}
+
+.production {    
+    padding: 0px;
+    margin: 0px; 
+    font-size:13px;
+    font-weight: 400; }
+.documents {    
+    padding: 0px;
+    margin: 0px; 
+    font-size:13px;
+    font-weight: 400; }
+.standards  {    
+    padding: 0px;
+    margin: 0px; 
+    font-size:13px;
+    font-weight: 400; }
+
+
+.footer-menu p {
+    padding: 0px;
+    margin: 0px; 
+    font-size: 12px;
+    font-weight: 400;    
+}
+
+.popup h2 {
+    padding: 0px;
+    margin: 0px; 
+    font-size: 24px;
+    font-weight: 500;
+    color: #323232;
+    }
+
+
+
+    КАТАЛОГ
+
+
+.catalog-menu {
+    padding: 0px;
+    margin: 0px;
+    width: 72px;
+    height: 11px;
+    font-family: Roboto;
+    font-size: 14px;
+    color: #323232;
+}
+
+
+.basket td {
+    padding: 0px;
+    margin: 0px; 
+    color: #323232;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.basket span  {
+    padding: 0px;
+    margin: 0px; 
+    font-size: 13px;
+    font-weight: 400;
+    color: #b8b8b7;
+}
+
+.creamy-catalog {
+    padding: 0px;
+    margin: 0px;
+    font-size: 35px;
+    color: #ffffff;
+}
+
+.breadcrumbs {
+    padding: 0px;
+    margin: 0px;
+    font-size: 11px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.assortment a {
+
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.assortment p {
+    padding: 0px;
+    margin: 0px;
+    text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
+    font-size: 45px;
+    color: #ffffff;
 }
