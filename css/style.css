@@ -1,218 +1,340 @@
-body  {
- margin:0;
- padding:0;
- font-family: 'Roboto', Arial,  sans-serif;
- font-size: 16px;
- color:#323232 ;
- font-weidth: 400;
- background-color:#849d8f;
-
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 16px;
+    color: #323232;
+    font-weidth: 400;
+    background-color: #849d8f;
 }
 
-
-img  {
-max-width: 100%;
-height: auto;
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 a {
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 .visually-hidden {
-    color:red;
+    color: red;
 }
-
-
 
 .header-item {
     padding: 0px;
     margin: 0px;
     font-size: 16px;
-font-weight: 700;
-color: #ffffff}
-
+    font-weight: 700;
+    color: #ffffff
+}
 
 .menu-link {
-text-decoration:none;
-color: #ffffff;
-
+    color: #ffffff;
 }
 
-.form-link {
-color: #323232;
+.user-navgation {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    text-align: right;
 }
 
+.user-navgation,
+login {
+    width: 32px;
+    height: 13px;
+}
 
+.basket {
+    width: 38px;
+    height: 13px;
+}
 
+.login-link a {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.85;
+    letter-spacing: normal;
+    text-align: left;
+    color: #323232;
+}
 
-.advantages  {
+.advantages {
     padding: 0px;
     margin: 0px;
     font-color: #323232;
     font-size: 24px;
     font-weight: 400;
-    
+    background-image: url()
 }
 
-.advantages li {
+.advantages-item {
     padding: 0px;
     margin: 0px;
     font-size: 16px;
-
 }
 
-
-.sherbet h2 {
+.hot-news h2 {
     padding: 0px;
     margin: 0px;
     color: #323232;
     font-size: 16px;
     font-weight: 700;
-  
 }
-.sherbet a{
+
+.hot-news a {
     padding: 0px;
-    margin: 0px;  
+    margin: 0px;
     height: 14px;
     color: #323232;
     font-size: 24px;
     font-weight: 500;
-
 }
 
-
-
-
-.mailing p{
+.mailing p {
     padding: 0px;
-    margin: 0px;  
-color: #5a5a5a;
-font-size: 16px;
-font-weight: 400;
-
+    margin: 0px;
+    color: #5a5a5a;
+    font-size: 16px;
+    font-weight: 400;
 }
 
-.footer-menu a {
-    text-decoration: none;   
-padding: 0px;
-margin: 0px; 
-color:#ffffff; 
+.footer-menu a,
+p {
+    padding: 0px;
+    margin: 0px;
+    color: #ffffff;
 }
 
+.footer-link-tw {}
 
-.footer-link-tw  {}
+.footer-link-in {}
 
-.footer-link-in  {}
+.footer-link-fb {}
 
-.footer-link-fb  {}
+.footer-link-vk {}
 
-.footer-link-vk  {}
+.footer-menu {}
 
-
-.suppliers { 
-   
-padding: 0px;
-margin: 0px; 
-font-size:13px;
-font-weight: 700;
+.footer-item {
+    padding: 0px;
+    margin: 0px;
+    font-size: 13px;
+    font-weight: 400;
 }
 
-.production {    
+.suppliers {
     padding: 0px;
-    margin: 0px; 
-    font-size:13px;
-    font-weight: 400; }
-.documents {    
-    padding: 0px;
-    margin: 0px; 
-    font-size:13px;
-    font-weight: 400; }
-.standards  {    
-    padding: 0px;
-    margin: 0px; 
-    font-size:13px;
-    font-weight: 400; }
-
+    margin: 0px;
+    font-size: 13px;
+    font-weight: 700;
+}
 
 .footer-menu p {
     padding: 0px;
-    margin: 0px; 
+    margin: 0px;
     font-size: 12px;
-    font-weight: 400;    
+    font-weight: 400;
 }
 
 .popup h2 {
     padding: 0px;
-    margin: 0px; 
+    margin: 0px;
     font-size: 24px;
     font-weight: 500;
-    color: #323232;
-    }
-
-
-
-    КАТАЛОГ
-
-
-.catalog-menu {
-    padding: 0px;
-    margin: 0px;
-    width: 72px;
-    height: 11px;
-    font-family: Roboto;
-    font-size: 14px;
     color: #323232;
 }
 
 
-.basket td {
+/*----catalog---- */
+
+.catalog-menu li {
     padding: 0px;
-    margin: 0px; 
+    margin: 0px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    text-align: left;
+    color: #323232;
+}
+
+.new {
+    width: 56px;
+    height: 11px;
+    font-weight: bold;
+}
+
+.creamy {
+    width: 72px;
+    height: 11px;
+    font-weight: normal;
+}
+
+.sherbet {
+    width: 60px;
+    height: 14px;
+    font-weight: normal;
+}
+
+.ice {
+    width: 102px;
+    height: 14px;
+    font-weight: normal;
+}
+
+.melorin {
+    width: 58px;
+    height: 13px;
+    font-weight: normal;
+}
+
+.basket-full td {
+    padding: 0px;
+    margin: 0px;
     color: #323232;
     font-size: 13px;
     font-weight: 400;
 }
 
-.basket span  {
+.basket-full span {
     padding: 0px;
-    margin: 0px; 
+    margin: 0px;
     font-size: 13px;
     font-weight: 400;
     color: #b8b8b7;
 }
 
-.creamy-catalog {
+.catalog-title {
     padding: 0px;
     margin: 0px;
+    width: 381px;
+    height: 33px;
+    font-family: Roboto;
     font-size: 35px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.17;
+    letter-spacing: normal;
+    text-align: left;
     color: #ffffff;
 }
 
 .breadcrumbs {
     padding: 0px;
     margin: 0px;
-    width: 72px;
+    width: 220px;
     height: 11px;
+    font-family: Roboto;
     font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
     line-height: 1.14;
+    letter-spacing: normal;
+    text-align: left;
     color: #ffffff;
-    text-decoration: none;   
 }
 
-
 .assortment a {
-
+    font-family: Roboto;
     font-size: 16px;
     font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    text-align: center;
     color: #ffffff;
-    text-decoration: none;
 }
 
 .assortment p {
     padding: 0px;
     margin: 0px;
+    width: 75px;
+    height: 34px;
     text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
+    font-family: Roboto;
     font-size: 45px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+}
+
+.price {
+    padding: 0px;
+    margin: 0px;
+    width: 72px;
+    height: 34px;
+    text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
     color: #ffffff;
+}
+
+.assortment img {
+    border-radius: 50%;
+}
+
+
+/*----для сеток, доделаю совмещу все---- */
+
+html,
+body {
+    width: 1200px;
+    height: 2416px;
+}
+
+body {
+    background-image: url("gllacy-index.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+.header-item {
+    min-height: 160;
+}
+
+.menu-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    min-height: 160;
+    background-color: transparent;
+}
+
+.header-logo {
+    width: 154px;
+    height: 64px;
+}
+
+.menu {
+    height: 15px;
+}
+
+.user-navgation {
+    height: 33px;
+    margin: 0px;
+    padding: 0px;
 }
