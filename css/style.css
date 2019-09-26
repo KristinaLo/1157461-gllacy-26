@@ -261,10 +261,6 @@ p {
 }
 
 .assortment p {
-    padding: 0px;
-    margin: 0px;
-    width: 75px;
-    height: 34px;
     text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
     font-family: Roboto;
     font-size: 45px;
@@ -273,23 +269,6 @@ p {
     font-stretch: normal;
     line-height: 1;
     letter-spacing: normal;
-    text-align: left;
-}
-
-.price {
-    padding: 0px;
-    margin: 0px;
-    width: 72px;
-    height: 34px;
-    text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
-    font-family: Roboto;
-    font-size: 30px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: left;
     color: #ffffff;
 }
 
