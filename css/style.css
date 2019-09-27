@@ -21,7 +21,7 @@ a {
     color: red;
 }
 
-.header-item {
+.main-header {
     padding: 0px;
     margin: 0px;
     font-size: 16px;
@@ -33,18 +33,15 @@ a {
     color: #ffffff;
 }
 
-.user-navgation {
+.user-navigation {
     font-family: Roboto;
     font-size: 14px;
     font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
     line-height: 1.14;
-    letter-spacing: normal;
     text-align: right;
 }
 
-.user-navgation,
+.user-navigation,
 login {
     width: 32px;
     height: 13px;
@@ -58,11 +55,7 @@ login {
 .login-link a {
     font-family: Roboto;
     font-size: 13px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
     line-height: 1.85;
-    letter-spacing: normal;
     text-align: left;
     color: #323232;
 }
@@ -107,7 +100,7 @@ login {
     font-weight: 400;
 }
 
-.footer-menu a,
+.main-footer a,
 p {
     padding: 0px;
     margin: 0px;
@@ -122,7 +115,7 @@ p {
 
 .footer-link-vk {}
 
-.footer-menu {}
+.main-footer {}
 
 .footer-item {
     padding: 0px;
@@ -138,7 +131,7 @@ p {
     font-weight: 700;
 }
 
-.footer-menu p {
+.main-footer p {
     padding: 0px;
     margin: 0px;
     font-size: 12px;
@@ -161,11 +154,7 @@ p {
     margin: 0px;
     font-family: Roboto;
     font-size: 14px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
     line-height: 1.14;
-    letter-spacing: normal;
     text-align: left;
     color: #323232;
 }
@@ -179,25 +168,21 @@ p {
 .creamy {
     width: 72px;
     height: 11px;
-    font-weight: normal;
 }
 
 .sherbet {
     width: 60px;
     height: 14px;
-    font-weight: normal;
 }
 
 .ice {
     width: 102px;
     height: 14px;
-    font-weight: normal;
 }
 
 .melorin {
     width: 58px;
     height: 13px;
-    font-weight: normal;
 }
 
 .basket-full td {
@@ -224,10 +209,7 @@ p {
     font-family: Roboto;
     font-size: 35px;
     font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
     line-height: 1.17;
-    letter-spacing: normal;
     text-align: left;
     color: #ffffff;
 }
@@ -239,11 +221,7 @@ p {
     height: 11px;
     font-family: Roboto;
     font-size: 14px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
     line-height: 1.14;
-    letter-spacing: normal;
     text-align: left;
     color: #ffffff;
 }
@@ -252,10 +230,7 @@ p {
     font-family: Roboto;
     font-size: 16px;
     font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
     line-height: 1.38;
-    letter-spacing: normal;
     text-align: center;
     color: #ffffff;
 }
@@ -265,10 +240,7 @@ p {
     font-family: Roboto;
     font-size: 45px;
     font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
     line-height: 1;
-    letter-spacing: normal;
     color: #ffffff;
 }
 
@@ -291,7 +263,7 @@ body {
     background-repeat: no-repeat;
 }
 
-.header-item {
+.main-header {
     min-height: 160;
 }
 
