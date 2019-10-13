@@ -31,14 +31,12 @@
                 </ul>
             </nav>
             <ul class="user-navigation">
-                <li> Поиск
-                    <div class="search-form">
-                        <form action="https://echo/htmlacademy.ru" method="POST">
-                            <label for="search"> Поиск </label>
-                            <input type="search" name="search" id="search" placeholder="Что ищем?">
-                            <button type="submit" class="visually-hidden">Искать</button>
-                        </form>
-                    </div>
+                <li class="search-icon"> <span class="visually-hidden">Поиск</span>
+                    <form action="https://echo/htmlacademy.ru" method="POST">
+                        <label for="search"> Поиск </label>
+                        <input type="search" name="search" id="search" placeholder="Что ищем?">
+                        <button type="submit" class="visually-hidden">Искать</button>
+                    </form>
                 </li>
                 <li>
                     <span class="login">Вход</span>
@@ -52,12 +50,13 @@
                                 <label for="password" class="visually-hidden">Пароль</label>
                                 <input type="password" name="password" placeholder="Пароль" id="password">
                             </p>
-                            <button type="submit">Войти</button>
+                            <button type="submit" class="login-button">Войти</button>
+                            <ul class="login-form-link">
+                                <li> <a class="login-link" href="#">Забыли пароль?</a></li>
+                                <li> <a class="login-link" href="#">Новая регистрация</a></li>
+                            </ul>
                         </form>
-                        <ul class="login-link">
-                            <li> <a href="#">Забыли пароль?</a></li>
-                            <li> <a href="#">Новая регистрация</a></li>
-                        </ul>
+
                     </div>
 
                 </li>
@@ -88,14 +87,15 @@
             </ul>
         </header>
         <main>
-            <h1 class="catalog-title">Сливочное мороженое</h1>
+
             <ul class="breadcrumbs">
-                <li><a href="index.html">Главная</a></li>
-                <li>
-                    <a href="#">Каталог</a></li>
-                <li>
-                    <a href="catalog.html"> Сливочное</a></li>
+                <li><a href="index.html">Главная  </a></li>
+                <li>»</li>
+                <li><a href="#">Каталог</a></li>
+                <li>»</li>
+                <li><a href="catalog.html"> Сливочное </a></li>
             </ul>
+            <h1 class="catalog-title">Сливочное мороженое</h1>
             <section class="assortment">
                 <h2 class="visually-hidden">Ассортимент</h2>
 
