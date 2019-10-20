@@ -15,14 +15,14 @@
             <nav class="menu-navigation">
                 <a href="index.html" class="header-logo"><img src="img/logo-gllacy.svg" width="154" height="64" alt="Логотип магазина Глейси "></a>
                 <ul class="menu">
-                    <li class="menu-item"><a class="menu-link" href="catalog.html">Каталог </a>
+                    <li class="menu-item"><a class="menu-link menu-link-catalog " href="catalog.html">Каталог </a>
 
                         <ul class="catalog-menu">
-                            <li class="catalog-menu catalog-menu-new"> <a href="#">Новинки</a> </li>
-                            <li class="catalog-menu"> <a href="#"> Сливочное</a> </li>
-                            <li class="catalog-menu"> <a href="#">Щербеты</a> </li>
-                            <li class="catalog-menu"> <a href="#">Фруктовый лед</a> </li>
-                            <li class="catalog-menu"><a href="#"> Мелорин</a></li>
+                            <li> <a class="catalog-menu-link catalog-menu-link-new" href="#">Новинки</a> </li>
+                            <li> <a class="catalog-menu-link catalog-menu-link-creamy" href="catalog.html"> Сливочное</a> </li>
+                            <li> <a class="catalog-menu-link" href="#">Щербеты</a> </li>
+                            <li> <a class="catalog-menu-link" href="#">Фруктовый лед</a> </li>
+                            <li><a class="catalog-menu-link" href="#"> Мелорин</a></li>
                         </ul>
 
                     </li>
@@ -33,7 +33,7 @@
             <ul class="user-navigation">
                 <li class="search-icon"> <span class="visually-hidden">Поиск</span>
                     <form action="https://echo/htmlacademy.ru" method="POST">
-                        <label for="search"> Поиск </label>
+                        <label for="search" class="visually-hidden"> Поиск</label>
                         <input type="search" name="search" id="search" placeholder="Что ищем?">
                         <button type="submit" class="visually-hidden">Искать</button>
                     </form>
@@ -60,10 +60,10 @@
                     </div>
 
                 </li>
-                <li class="basket-full">2 товара
+                <li> <span class="basket-full-label">2 товара</span>
                     <div class="backet-form">
                         <table class="basket-full">
-                            <tr>
+                            <tr class="">
                                 <td> <button type="button"><span class="visually-hidden">Удалить из корзины</span></button></td>
                                 <td> <img src="img/creamy-with-orange-jam-and-citrus-shavings.jpg" width="33" height="33" alt="Сливочное мороженое с апельсиновым джемом 
                       и цитрусовой стружкой"></td>
@@ -74,14 +74,31 @@
 
                             <tr>
                                 <td> <button type="button"><span class="visually-hidden">Удалить из корзины</span></button></td>
-                                <td><img src="img/creamy-coffee-with-pieces-of-chocolate.jpg" width="33" height="33" alt="Сливочно-кофейное мороженое с кусочками шоколада"></td>
-                                <td> Сливочно-кофейное мороженое с кусочками шоколад</td>
+                                <td><img src="img/creamy-strawberry-with-white-chocolate-powder.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой 
+                                    из белого шоколада"></td>
+                                <td> Клубничный пломбир с присыпкой из белого шоколада</td>
                                 <td>1,5 кг х <span>300 руб.</span></td>
-                                <td>433 руб.</td>
+                                <td>450 руб.</td>
                             </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <p>Итого 750 руб</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><a href="#" class="checkout"> Оформить заказ</a></td>
+                            </tr>
+
                         </table>
-                        <p>Итого 733 руб</p>
-                        <a href="#"> Оформить заказ</a>
+
                     </div>
                 </li>
             </ul>
