@@ -1026,14 +1026,12 @@
     
     .footer-list li {
         margin-right: 32px;
+        display: flex;
+        justify-content: space-between;
     }
     
     .footer-list li:nth-child(2n+2) {
         margin-right: 0px;
-    }
-    
-    .footer-list div {
-        width: 305px;
         padding-left: 22px;
         display: flex;
     }
