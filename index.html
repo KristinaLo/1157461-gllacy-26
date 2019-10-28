@@ -10,9 +10,9 @@
 </head>
 
 <body>
-    <input class="visually-hidden" type="radio" id="slider-creme-brulee" name="toggle" checked>
-    <input class="visually-hidden" type="radio" id="slider-chocolate" name="toggle">
-    <input class="visually-hidden" type="radio" id="slider-sorbet" name="toggle">
+    <input class="visually-hidden slider-creme-brulee" type="radio" id="slider-creme-brulee" name="toggle" checked>
+    <input class="visually-hidden slider-chocolate" type="radio" id="slider-chocolate" name="toggle">
+    <input class="visually-hidden slider-sorbet" type="radio" id="slider-sorbet" name="toggle">
     <div class="slider-wrapper">
         <div class="site-wrapper">
 
@@ -49,16 +49,19 @@
                                     <label for="password" class="visually-hidden">Пароль</label>
                                     <input type="password" name="password" placeholder="Пароль" id="password">
                                 </p>
-                                <button class="login-button" type="submit">Войти</button>
-                                <ul class="login-form-link">
-                                    <li> <a class="login-link" href="#">Забыли пароль?</a></li>
-                                    <li> <a class="login-link" href="#">Новая регистрация</a></li>
-                                </ul>
+                                <div>
+                                    <button class="login-button" type="submit">Войти</button>
+                                    <ul class="login-form-link">
+                                        <li> <a class="login-link" href="#">Забыли пароль?</a></li>
+                                        <li> <a class="login-link" href="#">Новая регистрация</a></li>
+                                    </ul>
+
+                                </div>
                             </form>
                         </div>
 
                     </li>
-                    <li class="basket"> Пусто </li>
+                    <li> <span class="basket"> Пусто</span> </li>
                 </ul>
                 <div class="user-info">
                     <h2 class="visually-hidden">Режим работы</h2>
@@ -76,13 +79,13 @@
                         <label for="slider-sorbet">Третий</label>
                     </div>
                     <ul class="slider-list">
-                        <li class="slider-creme-brulee" id="slide-creme-brulee">
+                        <li class="slider-creme-brulee slide" id="slide-creme-brulee">
                             <h3 class="slider-title">Крем-брюле и пломбир с малиновым джемом</h3>
                             <a class="slider-link" href="#">Давайте оба!</a></li>
-                        <li class="slider-chocolate" id="slide-chocolate">
+                        <li class="slider-chocolate slide" id="slide-chocolate">
                             <h3 class="slider-title">Шоколадный пломбир и лимонный сорбет</h3>
                             <a class="slider-link" href="#">Давайте оба!</a></li>
-                        <li class="slider-sorbet" id="slide-sorbet">
+                        <li class="slider-sorbet slide" id="slide-sorbet">
                             <h3 class="slider-title">Пломбир с помадкой и клубничный щербет</h3>
                             <a class="slider-link" href="#">Давайте оба!</a></li>
                     </ul>
@@ -114,28 +117,32 @@
                     <ul class="assortment-container">
                         <li>
                             <img src="img/creamy-with-orange-jam-and-citrus-shavings.jpg" width="267" height="267" alt="Сливочное мороженое с апельсиновым джемом 
-          и цитрусовой стружкой">
-                            <p>310₽/<span class="weight">кг </span></p>
-                            <h3><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a> </h3>
+                            и цитрусовой стружкой">
+                            <p class="price">310₽/<span class="weight">кг </span></p>
+                            <h3><a href="#" class="assortment-link">Сливочное с апельсиновым джемом и цитрусовой стружкой</a> </h3>
+                            <a href="#" class="catalog-fast-view">Быстрый просмотр</a>
                         </li>
 
                         <li>
                             <img src="img/creamy-coffee-with-pieces-of-chocolate.jpg" width="267" height="267" alt="Сливочно-кофейное мороженое с кусочками шоколада">
-                            <p>380₽/<span class="weight">кг</span></p>
+                            <p class="price">380₽/<span class="weight">кг</span></p>
 
-                            <h3><a href="#">Сливочно-кофейное с кусочками шоколада</a> </h3>
+                            <h3><a href="#" class="assortment-link">Сливочно-кофейное с кусочками шоколада</a> </h3>
+                            <a href="#" class="catalog-fast-view">Быстрый просмотр</a>
                         </li>
                         <li>
                             <img src="img/creamy-strawberry-with-white-chocolate-powder.jpg" width="267" height="267" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада ">
-                            <p>355₽/<span class="weight">кг</span></p>
+                            <p class="price">355₽/<span class="weight">кг</span></p>
 
-                            <h3><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
+                            <h3><a href="#" class="assortment-link">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
+                            <a href="#" class="catalog-fast-view">Быстрый просмотр</a>
                         </li>
                         <li>
                             <img src="img/creme-brulee-cream-with-caramel-sauce.jpg" width="267" height="267" alt="Мороженое сливочный крем-брюле с карамельной подливкой">
 
-                            <p>415₽/<span class="weight">кг</span></p>
-                            <h3><a href="#">Сливочный крем-брюле с карамельной подливкой</a></h3>
+                            <p class="price">415₽/<span class="weight">кг</span></p>
+                            <h3><a href="#" class="assortment-link">Сливочный крем-брюле с карамельной подливкой</a></h3>
+                            <a href="#" class="catalog-fast-view">Быстрый просмотр</a>
                         </li>
                     </ul>
                 </section>
@@ -176,7 +183,7 @@
 
                 <section class="map">
                     <h2 class="visually-hidden"> Как нас найти? </h2>
-                    <img src="img/map.png" width="1200" height="430" alt="Санкт-Петербург, ул. Большая Конюшенная 19/8">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abb5b6f88f84ae96aeb22b9521be0a876a069ff7b065ce366b321d635cf3e0faf&amp;width=1200&amp;height=430&amp;lang=ru_RU&amp;scroll=true"></script>
                     <div class="adress-info">
                         <p>Адрес главного офиса и офлайн-магазина:</p>
                         <p> ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
@@ -189,6 +196,7 @@
 
             <footer class="main-footer">
                 <ul class="footer-socials">
+
                     <li>
                         <a class="footer-link-socials footer-link-tw" href="#"> <span class="visually-hidden">Твиттер</span> </a>
                     </li>
@@ -203,14 +211,19 @@
                     </li>
                 </ul>
                 <ul class="footer-list">
-                    <li><a class="footer-link suppliers" href="#">Для поставщиков</a></li>
+                    <li>
+                        <a class="footer-link" href="#"> <span class="suppliers">Для поставщиков</span> </a>
+                    </li>
                     <li><a class="footer-link" href="#">Наши документы</a></li>
-                    <li><a class="footer-link" href="#">О производстве</a></li>
+                    <div>
+                        <li><a class="footer-link" href="#">О производстве</a></li>
 
-                    <li><a class="footer-link" href="#">Экологические стандарты</a></li>
+                        <li><a class="footer-link" href="#">Экологические стандарты</a></li>
+
+                    </div>
                 </ul>
                 <div class="produced">
-                    <a href="https://htmlacademy.ru/intensive/htmlcss"> HTML Academy</a>
+                    <a href="https://htmlacademy.ru/intensive/htmlcss" class="produced-link"><img src="img/logo-htmlacademy-small.svg" width="108" height="39" alt="htmlacademy"></a>
                     <p>Сделано в <a href='https://htmlacademy.ru/intensive/htmlcss'>HTML Academy</a> © 2019 </p>
                 </div>
             </footer>
