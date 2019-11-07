@@ -35,24 +35,18 @@ a {
     transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
-.site-wrapper::before,
-.site-wrapper::after {
+.slider-wrapper::before,
+.slider-wrapper::after {
     content: "";
     visibility: hidden;
 }
 
-.site-wrapper::before {
+.slider-wrapper::before {
     background-image: url("../img/chocolate-sundae-and-lemon-sorbet.png");
 }
 
-.site-wrapper::after {
+.slider-wrapper::after {
     background-image: url("../img/ice-cream-with-fondant-and-strawberry-sorbet.png");
-}
-
-.site-wrapper-catalog {
-    width: 1146px;
-    padding: 0 27px;
-    margin: 0 auto;
 }
 
 .visually-hidden {
@@ -69,14 +63,15 @@ a {
 }
 
 .header-logo {
-    margin-right: 24px;
+    margin-right: 10px;
 }
 
 .menu {
     margin: 0px;
+    margin-top: 14px;
     padding: 0px;
+    width: 378px;
     display: flex;
-    width: 385px;
     justify-content: space-between;
     list-style: none;
 }
@@ -95,12 +90,13 @@ a {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .menu-link {
     position: relative;
     color: #ffffff;
-    padding: 7px 14px;
+    padding: 8px 14px;
     padding-bottom: 2px;
 }
 
@@ -135,10 +131,17 @@ a {
     background-color: #d07058;
     border-radius: 20px;
     padding-bottom: 7px;
+    position: relative;
+    padding: 7px 14px;
+}
+
+.menu-item-catalog {
+    padding-bottom: 20px;
 }
 
 .menu-item-catalog:hover .catalog-menu {
     display: block;
+    z-index: 2;
 }
 
 .menu-navigation {
@@ -148,19 +151,28 @@ a {
 
 .user-navigation {
     padding: 0;
+    margin: 0;
     margin-left: auto;
+    top: 23px;
+    right: 0;
     display: flex;
     justify-content: space-between;
-    width: 246px;
+    width: 260px;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
     list-style: none;
+    position: absolute;
 }
 
 .user-navigation li {
     padding: 0;
     margin-right: 9px;
+}
+
+.user-navigation li:hover:not(.basket-full-label) {
+    background-color: #f8f7f4;
+    color: #323232;
 }
 
 .user-navigation li:last-child {
@@ -184,17 +196,19 @@ a {
 .search-icon::after {
     content: "";
     position: relative;
-    top: 8px;
-    left: 8px;
+    top: 7px;
+    left: 7px;
     width: 32px;
     height: 32px;
     background-image: url("../img/loupe.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+    color: #323232;
 }
 
 .search-icon:hover form {
     display: block;
+    z-index: 2;
 }
 
 .search-icon form {
@@ -219,19 +233,30 @@ a {
     background-color: #ffffff;
 }
 
+.search-icon input:hover {
+    border: solid 2px rgba(154, 154, 154, 0.52);
+}
+
 .login {
     position: relative;
     margin: 0;
-    width: 93px;
+    width: 94px;
     height: 32px;
     box-sizing: border-box;
     display: block;
-    padding: 10px 0;
+    padding: 9px 0px;
     padding-left: 28px;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 50px;
     text-align: center;
     cursor: pointer;
+}
+
+.login span {
+    padding-top: 9px;
+    padding-left: 44px;
+    padding-bottom: 10px;
+    display: flex;
 }
 
 .login::after {
@@ -265,6 +290,7 @@ a {
 
 .login:hover .login-form {
     display: block;
+    z-index: 2;
 }
 
 .login-form-list {
@@ -284,7 +310,6 @@ a {
 
 .login-form div {
     width: 278px;
-    height: 44px;
     display: flex;
 }
 
@@ -311,6 +336,10 @@ a {
     border-radius: 5px;
     border: solid 1px #d3d3d2;
     background-color: #ffffff;
+}
+
+.login-form input:hover {
+    border: solid 2px rgba(154, 154, 154, 0.52);
 }
 
 .login-form input:nth-child(2n+2) {
@@ -352,12 +381,22 @@ a {
     margin: 0;
     width: 93px;
     height: 32px;
-    padding-top: 10px;
-    padding-left: 45px;
     box-sizing: border-box;
     display: block;
+    padding: 10px 0;
+    padding-left: 28px;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.basket span {
+    padding: 0;
+    margin: 0;
+    padding-top: 9px;
+    padding-left: 45px;
+    display: flex;
 }
 
 .basket::after {
@@ -374,13 +413,19 @@ a {
 }
 
 .user-info {
+    position: absolute;
+    top: 69px;
+    right: 0;
+    padding: 0px;
+    margin: 0px;
     width: 100%;
     height: 41px;
     margin-left: auto;
 }
 
 .user-info p {
-    margin-bottom: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     padding: 0;
     font-size: 14px;
     line-height: 1.14;
@@ -406,6 +451,11 @@ a {
     color: #ffffff;
 }
 
+.slider-list {
+    margin: 0;
+    padding: 0;
+}
+
 .slider-controls {
     position: absolute;
     bottom: 63px;
@@ -427,7 +477,7 @@ a {
 }
 
 .slider-controls label:hover {
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
 .slider-creme-brulee:checked~.slider-wrapper {
@@ -793,6 +843,10 @@ a {
     background-color: #ffffff;
 }
 
+.mailing input:hover {
+    border: solid 2px rgba(154, 154, 154, 0.52);
+}
+
 .mailing button {
     margin-bottom: 36px;
     margin-left: 11px;
@@ -832,23 +886,20 @@ a {
     height: 430px;
     margin: 0;
     padding: 0;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+    margin-bottom: 18px;
 }
 
 .adress-info {
     padding: 0;
-    margin-left: auto;
-    display: block;
-    position: absolute;
-    right: 27px;
-    top: 63px;
     padding-top: 32px;
     padding-left: 25px;
-    padding-right: 57px;
-    width: 302px;
-    height: 305px;
+    margin-left: auto;
+    width: 277px;
+    height: 283px;
+    right: 27px;
+    top: 63px;
+    display: block;
+    position: absolute;
     background-color: #ffffff;
     border-radius: 10px;
     z-index: 2;
@@ -882,7 +933,7 @@ a {
 }
 
 .adress-info p:nth-child(3n+3) {
-    padding-bottom: 39px;
+    padding-bottom: 26px;
     width: 172px;
 }
 
@@ -911,14 +962,7 @@ a {
     margin: 0px;
     font-size: 12px;
     line-height: 1.33;
-    color: #fefefe;
-}
-
-.main-footer::before {
-    width: 1146px;
-    height: 1px;
-    opacity: 0.3;
-    background-color: #ffffff;
+    color: #ffffff;
 }
 
 .footer-socials {
@@ -937,6 +981,18 @@ a {
     margin-right: 0px;
 }
 
+.footer-link-socials {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    color: rgba(255, 255, 255, 0.8);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
 .footer-link-tw::after {
     content: "";
     z-index: 1;
@@ -945,7 +1001,6 @@ a {
     left: 0;
     top: 0;
     background-image: url("../img/twitter.svg");
-    color: rgba(255, 255, 255, 0.8);
     background-repeat: no-repeat;
     background-position: 0 0;
 }
@@ -956,7 +1011,6 @@ a {
     height: 32px;
     left: 0;
     top: 0;
-    color: #ffffff;
     background-image: url("../img/instagram.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -968,7 +1022,6 @@ a {
     height: 32px;
     left: 0;
     top: 0;
-    color: #ffffff;
     background-image: url("../img/fb.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -980,24 +1033,10 @@ a {
     height: 32px;
     left: 0;
     top: 0;
-    color: #ffffff;
     background-image: url("../img/vk.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     position: absolute;
-}
-
-.footer-link-socials {
-    margin: 0px;
-    padding: 0px;
-    position: relative;
-    width: 32px;
-    height: 32px;
-    border: 2px solid rgba(255, 255, 255, 0.5);
-    border-radius: 50%;
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
 }
 
 .footer-list {
@@ -1125,6 +1164,11 @@ a {
     background-color: #ffffff;
 }
 
+.popup input:hover,
+.popup textarea:hover {
+    border: solid 2px rgba(154, 154, 154, 0.52);
+}
+
 .popup textarea {
     width: 428px;
     height: 155px;
@@ -1166,7 +1210,6 @@ a {
     left: -7px;
     display: none;
     width: 143px;
-    height: 171px;
     box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
     background-color: #f8f7f4;
     border-radius: 10px;
@@ -1242,8 +1285,9 @@ a {
 }
 
 .basket-full-label span {
-    padding-top: 10px;
-    padding-left: 40px;
+    padding-top: 9px;
+    padding-left: 45px;
+    padding-bottom: 10px;
     display: flex;
 }
 
@@ -1251,7 +1295,7 @@ a {
     content: "";
     width: 22px;
     height: 21px;
-    left: 16px;
+    left: 17px;
     top: 7px;
     position: absolute;
     background-image: url("../img/basket-full.svg");
@@ -1261,6 +1305,7 @@ a {
 
 .basket-full-label:hover .basket-full {
     display: block;
+    z-index: 2;
 }
 
 .basket-full {
@@ -1272,7 +1317,6 @@ a {
     font-weight: 500;
     line-height: 1.14;
     color: #323232;
-    z-index: 7;
     top: 38px;
     right: 0px;
     padding: 0;
@@ -1295,6 +1339,7 @@ a {
 }
 
 .basket-full td {
+    display: flex;
     padding: 0;
     padding-right: 10px;
     margin: 0;
@@ -1308,10 +1353,11 @@ a {
 }
 
 .delete {
+    content: "";
     width: 11px;
     height: 11px;
     background-color: #f8f7f4;
-    background-image: url("../img/close.svg");
+    background-image: url("../img/close.png");
     background-repeat: no-repeat;
     background-position: 0 0;
     border: none;
@@ -1338,13 +1384,14 @@ a {
     padding-right: 30px;
     width: 220px;
     height: 13px;
-    font-size: 13px;
     line-height: 1.23;
     text-align: left;
 }
 
 .basket-full span {
-    font-size: 13px;
+    padding: 0;
+    padding-left: 1px;
+    margin: 0;
     color: #b8b8b7;
 }
 
@@ -1361,12 +1408,12 @@ a {
 }
 
 .checkout {
-    display: block;
+    display: flex;
     margin-top: 17px;
     margin-left: auto;
     margin-right: 14px;
     padding: 12px 15px;
-    width: 142px;
+    width: 150px;
     height: 19px;
     font-size: 18px;
     font-weight: 700;
@@ -1392,12 +1439,13 @@ a {
 
 .breadcrumbs {
     margin: 0;
-    margin-bottom: 13px;
+    margin-top: 24px;
+    margin-bottom: 9px;
     padding: 0;
     display: flex;
     justify-content: space-between;
     list-style: none;
-    width: 220px;
+    width: 221px;
     height: 11px;
 }
 
@@ -1413,14 +1461,13 @@ a {
 .breadcrumbs-link {
     position: relative;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    padding-bottom: 2px;
 }
 
 .breadcrumbs-link::after {
-    padding-left: 5px;
+    padding-left: 8px;
     content: '»';
     top: 0px;
-    right: -14px;
+    right: -15px;
     position: absolute;
 }
 
@@ -1431,7 +1478,7 @@ a {
 .catalog-title {
     padding: 0px;
     margin: 0px;
-    margin-bottom: 30px;
+    margin-bottom: 26px;
     font-size: 35px;
     font-weight: 700;
     line-height: 1.17;
@@ -1451,7 +1498,6 @@ a {
 .filter form {
     width: 860px;
     height: 135px;
-    margin-bottom: 40px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -1464,11 +1510,15 @@ a {
     display: block;
 }
 
+.sorting-group legend {
+    margin-left: 16px;
+}
+
 .sorting {
     position: relative;
 }
 
-.sorting select {
+.sorting {
     width: 194px;
     padding: 9px 15px;
     background-color: rgba(255, 255, 255, 0.2);
@@ -1477,20 +1527,11 @@ a {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    text-decoration: none;
+    position: relative;
 }
 
-.sorting::after {
-    position: absolute;
-    content: "";
-    top: 14px;
-    right: 15px;
-    border: 0 solid transparent;
-    border-left-width: 7px;
-    border-right-width: 7px;
-    border-top: 11px solid #ffffff;
-}
-
-.sorting select:hover {
+.sorting:hover {
     background-color: #f8f7f4;
     color: #323232;
 }
@@ -1499,6 +1540,10 @@ a {
     width: 220px;
     margin: 0;
     padding: 0;
+}
+
+.price-filter-group legend {
+    margin-left: 14px;
 }
 
 .price-filter {
@@ -1513,6 +1558,18 @@ a {
     content: "";
     width: 20px;
     height: 22px;
+    top: 9px;
+    left: 34px;
+    background-image: url("../img/filter-button.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.price-filter::after {
+    width: 22px;
+    height: 25px;
+    content: "";
     top: 9px;
     left: 34px;
     background-image: url("../img/filter-button.svg");
@@ -1555,45 +1612,51 @@ a {
     display: block;
 }
 
+.fatness-group legend {
+    margin-left: 13px;
+}
+
 .fatness {
-    width: 415px;
+    width: 396px;
     height: 37px;
     margin: 0;
     padding: 0;
+    padding-right: 19px;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 30px;
     list-style: none;
     display: flex;
+    justify-content: space-between;
 }
 
 .fatness li {
     padding: 0;
     margin: 0;
-    padding-left: 17px;
-    padding-top: 6px;
-}
-
-.fatness-checkbox {
-    display: none;
+    padding-left: 11px;
+    padding-top: 9px;
 }
 
 .fatness label {
-    padding-top: 5px;
+    padding-top: 2px;
     padding-left: 32px;
     position: relative;
     display: block;
 }
 
-.fatness-checkbox+label::before {
+.fatness-checkbox::before {
     content: "";
-    width: 19px;
-    height: 19px;
-    top: 0;
-    left: 0;
+    width: 15px;
+    height: 15px;
+    top: 0px;
+    left: 0px;
     border: 3px solid rgba(255, 255, 255, 0.8);
     border-radius: 50%;
     position: absolute;
     cursor: pointer;
+}
+
+.fatness-checkbox:hover::before {
+    border: 3px solid #ffffff;
 }
 
 .filter label {
@@ -1611,9 +1674,6 @@ a {
 }
 
 .filter legend {
-    margin: 0;
-    padding: 0;
-    margin-left: 16px;
     margin-bottom: 6px;
     font-size: 14px;
     font-weight: 500;
@@ -1625,40 +1685,42 @@ a {
     width: 703px;
     padding: 0;
     margin: 0;
-    margin-top: 18px;
+    margin-top: 15px;
 }
 
 .fillers-group legend {
-    margin-bottom: 8px;
+    margin-left: 15px;
 }
 
 .fillers {
     margin: 0;
     padding: 0;
-    width: 703px;
+    padding-right: 23px;
+    width: 684px;
     height: 37px;
     border-radius: 30px;
     background-color: rgba(255, 255, 255, 0.2);
     display: flex;
+    justify-content: space-between;
     list-style: none;
     position: relative;
 }
 
-.fillers-checkbox {
-    display: none;
+.fillers legend {
+    margin-left: 13px;
 }
 
 .fillers label {
-    padding-top: 2px;
-    padding-left: 30px;
+    padding-top: 3px;
+    padding-left: 32px;
     position: relative;
     display: block;
 }
 
-.fillers-checkbox+label::before {
+.fillers-checkbox::before {
     content: "";
-    width: 18px;
-    height: 18px;
+    width: 17px;
+    height: 17px;
     top: 0;
     left: 0;
     border: 2px solid rgba(255, 255, 255, 0.8);
@@ -1667,24 +1729,28 @@ a {
     cursor: pointer;
 }
 
+.fillers-checkbox:hover::before {
+    border: 2px solid #ffffff;
+}
+
 .fillers li {
     padding: 0;
     margin: 0;
-    padding-right: 20px;
     padding-top: 7px;
 }
 
 .fillers li:first-child {
-    padding-left: 16px;
+    padding-left: 15px;
 }
 
 .submit-filter {
     padding: 0;
     margin: 0;
-    margin-top: 40px;
+    margin-top: 37px;
     width: 144px;
     height: 37px;
-    padding: 10px;
+    padding-top: 7px;
+    padding-bottom: 8px;
     border: solid 2px #ffffff;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 20px;
@@ -1708,14 +1774,15 @@ a {
 .assortment-link {
     margin: 0;
     padding: 0;
-    bottom: 62px;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.38;
+    bottom: 10px;
     text-align: center;
     color: #ffffff;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     z-index: 100;
+    position: relative
 }
 
 .assortment-link:hover {
@@ -1748,6 +1815,7 @@ a {
 
 .assortment-container {
     padding: 0px;
+    margin: 0;
     width: 1146px;
     list-style: none;
     display: flex;
@@ -1804,6 +1872,7 @@ a {
 
 .assortment-item:hover .catalog-fast-view {
     display: block;
+    z-index: 2;
 }
 
 .assortment-container h3 {
@@ -1846,41 +1915,58 @@ a {
 .pagination {
     margin-top: 83px;
     margin-bottom: 49px;
-    width: 200px;
+    width: 190px;
     padding: 0px;
     display: flex;
     justify-content: space-between;
     list-style: none;
     margin-left: auto;
     text-decoration: none;
-    position: relative;
 }
 
 .pagination-item {
+    margin: 0;
+    padding: 0;
+}
+
+.pagination-link {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.13;
     color: #ffffff;
+    width: 20px;
+    height: 20px;
+    padding: 10px 10px;
 }
 
-.pagination li {
-    padding-top: 7px;
-}
-
-.pagination-item-active {
-    position: relative;
-    z-index: 1;
-}
-
-.pagination-item-active::before {
-    content: "";
+.pagination-link:hover:not(.pagination-link-active) {
     color: #323232;
+    top: 5px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.pagination-link-active {
+    position: relative;
+    z-index: 5;
+}
+
+.pagination-link-active span {
+    color: #323232;
+    z-index: 5;
+    position: relative;
+}
+
+.pagination-link-active::after {
+    content: "";
     position: absolute;
-    z-index: -1;
-    top: -5px;
-    left: -10px;
-    width: 27px;
-    height: 26px;
+    top: 5px;
+    left: 0;
+    width: 29px;
+    height: 29px;
     background-color: #ffffff;
     border-radius: 50%;
 }

@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=8f742eb0-3b34-48cd-a1ad-c1003abd9a59" type="text/javascript"></script>
 
 </head>
 
@@ -21,7 +22,7 @@
             <header class="main-header">
                 <nav class="menu-navigation">
 
-                    <img src="img/logo-gllacy.svg" class="header-logo" width="154" height="64" alt="Логотип магазина Глейси ">
+                    <img src="img/logo-gllacy.svg" class="header-logo" width="154" height="64" alt="Логотип магазина Глейси">
 
                     <ul class="menu">
                         <li class=" menu-item menu-item-catalog">
@@ -29,7 +30,7 @@
 
                             <ul class="catalog-menu">
                                 <li class="catalog-menu-item"> <a class="catalog-menu-link catalog-menu-link-new" href="#">Новинки</a> </li>
-                                <li class="catalog-menu-item"> <a class="catalog-menu-link "> Сливочное</a> </li>
+                                <li class="catalog-menu-item"> <a class="catalog-menu-link" href="catalog.html"> Сливочное</a> </li>
                                 <li class="catalog-menu-item"> <a class="catalog-menu-link" href="#">Щербеты</a> </li>
                                 <li class="catalog-menu-item"> <a class="catalog-menu-link" href="#">Фруктовый лед</a> </li>
                                 <li class="catalog-menu-item"><a class="catalog-menu-link" href="#"> Мелорин</a></li>
@@ -51,7 +52,7 @@
                         </form>
                     </li>
                     <li class="login">
-                        <span class="login">Вход</span>
+                        <span>Вход</span>
 
                         <form action="https://echo/htmlacademy.ru" method="POST" class="login-form">
                             <p>
@@ -74,7 +75,8 @@
 
 
                     </li>
-                    <li> <span class="basket"> Пусто</span> </li>
+                    <li class="basket">
+                        <span> Пусто</span> </li>
                 </ul>
                 <div class="user-info">
 
@@ -130,7 +132,7 @@
                 <section class="assortment assortment-hit">
                     <h2 class="visually-hidden">Ассортимент</h2>
                     <ul class="assortment-container">
-                        <li class="assortment-item ">
+                        <li class="assortment-item">
                             <img src="img/creamy-with-orange-jam-and-citrus-shavings.jpg" width="267" height="267" alt="Сливочное мороженое с апельсиновым джемом 
                             и цитрусовой стружкой">
                             <p class="price">310₽/<span class="weight">кг </span></p>
@@ -143,7 +145,7 @@
                             <h3><a href="#" class="assortment-link">Сливочно-кофейное с кусочками шоколада</a> </h3>
                         </li>
                         <li class="assortment-item">
-                            <img src="img/creamy-strawberry-with-white-chocolate-powder.jpg" width="267" height="267" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада ">
+                            <img src="img/creamy-strawberry-with-white-chocolate-powder.jpg" width="267" height="267" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада">
                             <p class="price">355₽/<span class="weight">кг</span></p>
                             <h3><a href="#" class="assortment-link">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
                         </li>
@@ -187,10 +189,9 @@
                     </section>
                 </div>
 
-
-                <section class="map" id="map" style="width: 1200px; height: 430px;">
-                    <h2 class="visually-hidden"> Как нас найти? </h2>
-                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8065bd3fcdfd167eae31edbf7ce0306f8cffce4bdb09d2e932539ea4601e0d93&amp;width=1200&amp;height=430&amp;lang=ru_RU&amp;scroll=true"></script>
+                <section class="map" id="map" style="width: 1200px; height: 430px">
+                    <h2 class=" visually-hidden"> Как нас найти? </h2>
+                    <img src="img/map.jpg" alt="Карта магазина Глейси" width="1200" height="430">
                     <div class="adress-info">
                         <p>Адрес главного офиса и офлайн-магазина:</p>
                         <p> ул. Большая Конюшенная 19/8, Санкт-Петербург</p>

@@ -12,13 +12,13 @@
 </head>
 
 <body>
-    <div class="site-wrapper-catalog">
+    <div class="site-wrapper">
         <header class="main-header">
             <nav class="menu-navigation">
                 <a href="index.html" class="header-logo"><img src="img/logo-gllacy.svg" width="154" height="64" alt="Логотип магазина Глейси "></a>
                 <ul class="menu">
                     <li class=" menu-item menu-item-catalog">
-                        <a class="menu-link menu-link-catalog "> Каталог</a>
+                        <a class=" menu-link-catalog "> Каталог</a>
 
                         <ul class="catalog-menu">
                             <li class="catalog-menu-item"> <a class="catalog-menu-link catalog-menu-link-new" href="#">Новинки</a> </li>
@@ -29,8 +29,8 @@
                         </ul>
 
                     </li>
-                    <li class="menu-item"><a class="menu-link" href="#">Доставки и оплата</a></li>
-                    <li class="menu-item"><a class="menu-link" href="#">О компании</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#">Доставка и оплата</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#">О Компании</a></li>
                 </ul>
             </nav>
             <ul class="user-navigation">
@@ -42,7 +42,7 @@
                     </form>
                 </li>
                 <li class="login">
-                    <span class="login">Вход</span>
+                    <span>Вход</span>
 
                     <form action="https://echo/htmlacademy.ru" method="POST" class="login-form">
                         <p>
@@ -92,7 +92,6 @@
                 </li>
             </ul>
             <div class="user-info">
-                <h2 class="visually-hidden">Режим работы</h2>
                 <p>С 10 до 20, ежедневно</p>
                 <p>
                     <a class="user-info-link" href="tel:88124502525">8 812 450-25-25</a></p>
@@ -117,15 +116,15 @@
 
                         <legend>Сортировка:</legend>
 
-                        <div class="sorting">
-                            <select name="sorting" id="sorting">
-                           <option value="by-popularity">По популярности</option> 
+
+                        <select class="sorting" name="sorting" id="sorting">
+                           <option value="by-popularity">по популярности</option> 
                            <option value="first-inexpensive">сначала недорогие</option> 
                            <option value="first-expensiva">сначала дорогие</option> 
                            <option value="first-fatty">по жирности</option> 
                        
                         </select>
-                        </div>
+
 
                     </fieldset>
                     <fieldset class="price-filter-group">
@@ -141,20 +140,20 @@
                         <legend>Жирность:</legend>
                         <ul class="fatness">
                             <li>
-                                <input type="radio" name="0%" id="fatness-0%" value="fatness-0%" class="fatness-checkbox">
-                                <label for="fatness-0%">0%</label>
+                                <input class="visually-hidden" type="radio" name="0%" id="fatness-0%" value="fatness-0%">
+                                <label class="fatness-checkbox" for="fatness-0%">0%</label>
                             </li>
                             <li>
-                                <input type="radio" name="10%" id="fatness-10%" value="fatness-10%" class="fatness-checkbox">
-                                <label for="fatness-10%">до 10%</label>
+                                <input class="visually-hidden" type="radio" name="10%" id="fatness-10%" value="fatness-10%">
+                                <label class="fatness-checkbox" for="fatness-10%">до 10%</label>
                             </li>
                             <li>
-                                <input type="radio" name="30%" id="fatness-30%" value="fatness-30%" class="fatness-checkbox">
-                                <label for="fatness-30%">до 30%</label>
+                                <input class="visually-hidden" type="radio" name="30%" id="fatness-30%" value="fatness-30%">
+                                <label class="fatness-checkbox" for="fatness-30%">до 30%</label>
                             </li>
                             <li>
-                                <input type="radio" name="30%+" id="fatness+30%" value="fatness+30%" class="fatness-checkbox">
-                                <label for="fatness+30%">выше 30%</label>
+                                <input class="visually-hidden" type="radio" name="30%+" id="fatness+30%" value="fatness+30%">
+                                <label class="fatness-checkbox" for="fatness+30%">выше 30%</label>
                             </li>
                         </ul>
 
@@ -163,24 +162,24 @@
                         <legend>Наполнители:</legend>
                         <ul class="fillers">
                             <li>
-                                <input type="checkbox" name="choco" id="choco" value="choco" class="fillers-checkbox">
-                                <label for="choco">шоколадные</label>
+                                <input type="checkbox" name="choco" id="choco" value="choco" class="visually-hidden">
+                                <label class="fillers-checkbox" for="choco">шоколадные</label>
                             </li>
                             <li>
-                                <input type="checkbox" name="sugar" id="sugar" value="sugar" class="fillers-checkbox">
-                                <label for="sugar">сахарные присыпки</label>
+                                <input type="checkbox" name="sugar" id="sugar" value="sugar" class="visually-hidden">
+                                <label class="fillers-checkbox" for="sugar">сахарные присыпки</label>
                             </li>
                             <li>
-                                <input type="checkbox" name="fruit" id="fruit" value="fruit" class="fillers-checkbox">
-                                <label for="fruit">фрукты</label>
+                                <input type="checkbox" name="fruit" id="fruit" value="fruit" class="visually-hidden">
+                                <label class="fillers-checkbox" for="fruit">фрукты</label>
                             </li>
                             <li>
-                                <input type="checkbox" name="syrups" id="syrups" value="syrups" class="fillers-checkbox">
-                                <label for="syrups">сиропы</label>
+                                <input type="checkbox" name="syrups" id="syrups" value="syrups" class="visually-hidden">
+                                <label class="fillers-checkbox" for="syrups">сиропы</label>
                             </li>
                             <li>
-                                <input type="checkbox" name="jam" id="jam" value="jam" class="fillers-checkbox">
-                                <label for="jam">джемы</label>
+                                <input type="checkbox" name="jam" id="jam" value="jam" class="visually-hidden">
+                                <label class="fillers-checkbox" for="jam">джемы</label>
                             </li>
                         </ul>
                     </fieldset>
@@ -272,27 +271,27 @@
                 </ul>
 
                 <ul class="pagination">
-                    <li>
-                        <a class="pagination-item" href="#">
-                            &lt; </a>
+                    <li class="pagination-item">
+                        <a class="pagination-link">
+                            <span>&lt;</span> </a>
                     </li>
-                    <li>
-                        <a class="pagination-item pagination-item-active"> 1</a>
+                    <li class="pagination-item">
+                        <a class="pagination-link pagination-link-active"> <span>1</span> </a>
                     </li>
-                    <li>
-                        <a class="pagination-item" href="#">2</a>
+                    <li class="pagination-item">
+                        <a class="pagination-link" href="#"><span>2</span></a>
                     </li>
-                    <li>
-                        <a class="pagination-item" href="#">3</a>
+                    <li class="pagination-item">
+                        <a class="pagination-link" href="#"><span>3</span></a>
                     </li>
-                    <li>
-                        <a class="pagination-item" href="#">4</a>
+                    <li class="pagination-item">
+                        <a class="pagination-link" href="#"><span>4</span></a>
                     </li>
-                    <li>
-                        <a class="pagination-item" href="#">5</a>
+                    <li class="pagination-item">
+                        <a class="pagination-link" href="#"><span>5</span></a>
                     </li>
-                    <li>
-                        <a class="pagination-item" href="#"> > </a>
+                    <li class="pagination-item">
+                        <a class="pagination-link" href="#"> <span>&gt;</span> </a>
                     </li>
                 </ul>
 
